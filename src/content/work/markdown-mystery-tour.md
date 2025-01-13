@@ -1,35 +1,38 @@
 ---
-title: Markdown Mystery Tour
-publishDate: 2020-03-02 00:00:00
+title: Cotatione
+publishDate: 2023-04-01 00:00:00
 img: /assets/stock-1.jpg
-img_alt: Iridescent ripples of a bright blue and pink liquid
+img_alt: Interface utilisateur simplifiée pour la gestion des demandes clients
 description: |
-  We designed a whodunnit-style game to introduce Markdown formatting. Suspense — suspicion — syntax!
+  Développement d'une application interne pour optimiser la gestion des demandes clients et des cotisations des affréteurs.
 tags:
-  - Design
-  - Dev
-  - User Testing
+  - Développement Web
+  - ReactJS
+  - NodeJS
+  - GraphQL
 ---
 
-## Level-two heading
+## Contexte du Projet
 
-> Tell me and I forget. Teach me and I remember. Involve me and I learn.
+> "Optimiser les processus internes pour mieux servir les clients."
 
-Lorem ipsum dolor sit amet, <a href="https://astro.build/">Astro</a> makes people happy. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Proin nibh nisl condimentum id venenatis a condimentum vitae. Dapibus ultrices in iaculis nunc. Arcu odio ut sem nulla pharetra diam sit amet. Diam quis enim lobortis scelerisque fermentum dui faucibus in ornare.
+Chez **Tempo One**, le projet visait à simplifier la gestion des demandes clients et à automatiser le suivi des cotisations des affréteurs. L'objectif principal était d'améliorer la productivité des équipes grâce à une application intuitive et performante.
 
-Arcu dui vivamus arcu felis bibendum ut tristique et egestas. Eget gravida cum sociis natoque penatibus. Cras fermentum odio eu feugiat pretium nibh. Proin nibh nisl condimentum id venenatis. Porta nibh venenatis cras sed felis eget velit. Id diam vel quam elementum pulvinar etiam non.
+### Développement et Technologies
 
-### Level-three heading
+L'application a été développée avec les technologies suivantes :
 
-Ultrices tincidunt arcu non sodales neque sodales ut. Sed enim ut sem viverra aliquet eget sit amet. Lacus luctus accumsan tortor posuere ac ut consequat semper viverra. Viverra accumsan in nisl nisi scelerisque eu ultrices. In massa tempor nec feugiat nisl pretium fusce.
+- **Frontend** : ReactJS, offrant une interface utilisateur fluide et interactive.
+- **Backend** : NodeJS, pour un traitement rapide et sécurisé des données.
+- **API** : GraphQL, permettant des requêtes flexibles et optimisées.
 
-### Level-three heading
+### Résultats
 
-Sed pulvinar porttitor mi in ultricies. Etiam non dolor gravida eros pulvinar pellentesque et dictum ex. Proin eu ornare ligula, sed condimentum dui. Vivamus tincidunt tellus mi, sed semper ipsum pharetra a. Suspendisse sollicitudin at sapien nec volutpat. Etiam justo urna, laoreet ac lacus sed, ultricies facilisis dolor. Integer posuere, metus vel viverra gravida, risus elit ornare magna, id feugiat erat risus ullamcorper libero. Proin vitae diam auctor, laoreet lorem vitae, varius tellus.
+- Réduction du temps de traitement des demandes de 30 %.
+- Amélioration notable de l’expérience utilisateur pour les collaborateurs internes.
+- Centralisation des données pour un suivi plus efficace des cotisations.
 
-Aenean pretium purus augue, ut bibendum erat convallis quis. Cras condimentum quis velit ac mollis. Suspendisse non purus fringilla, venenatis nisl porta, finibus odio. Curabitur aliquet metus faucibus libero interdum euismod. Morbi sed magna nisl. Morbi odio nibh, facilisis vel sapien eu, tempus tincidunt erat. Nullam erat velit, sagittis at purus quis, tristique scelerisque tortor. Pellentesque lacinia tortor id est aliquam viverra. Vestibulum et diam ac ipsum mollis fringilla.
+#### Méthodologies Utilisées
 
-#### Level-four heading
-
-- We noted this
-- And also this other point
+- **Méthode Agile** : Suivi hebdomadaire des sprints avec des outils comme Jira et Trello.
+- **Collaboration inter-équipes** : Implication des utilisateurs finaux dans la phase de test.

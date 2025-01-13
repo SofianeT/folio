@@ -1,120 +1,187 @@
 ---
-import BaseLayout from '../layouts/BaseLayout.astro';
+import BaseLayout from "../layouts/BaseLayout.astro";
 
-import ContactCTA from '../components/ContactCTA.astro';
-import Hero from '../components/Hero.astro';
+import ContactCTA from "../components/ContactCTA.astro";
+import Hero from "../components/Hero.astro";
+import Icon from "../components/Icon.astro";
 ---
 
-<BaseLayout title="About | Jeanine White" description="About Jeanine White Lorem Ipsum">
-	<div class="stack gap-20">
-		<main class="wrapper about">
-			<Hero
-				title="About"
-				tagline="Thanks for stopping by. Read below to learn more about myself and my background."
-			>
-				<img
-					width="1553"
-					height="873"
-					src="/assets/at-work.jpg"
-					alt="Jeanine White at work with a colleague"
-				/>
-			</Hero>
+<BaseLayout
+  title="About | Sofiane Tigrine"
+  description="Découvrez plus d’informations sur moi et mon parcours. Je suis un développeur Full-Stack basé à Marseille"
+>
+  <div class="stack gap-20">
+    <main class="wrapper about">
+      <Hero
+        title="À Propos"
+        tagline="Merci de votre visite ! Découvrez ci-dessous plus d’informations sur moi et mon parcours."
+      >
+        <img
+          width="1553"
+          height="873"
+          src="/assets/portrait.jpeg"
+          alt="Sofiane Tigrine"
+        />
+      </Hero>
 
-			<section>
-				<h2 class="section-title">Background</h2>
-				<div class="content">
-					<p>
-						Lorem ipsum dolor sit amet, <a href="https://astro.build/">Astro</a> makes people happy.
-						Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Proin nibh nisl condimentum
-						id venenatis a condimentum vitae. Dapibus ultrices in iaculis nunc. Arcu odio ut sem nulla
-						pharetra diam sit amet. Diam quis enim lobortis scelerisque fermentum dui faucibus in ornare.
-					</p>
-					<p>
-						Arcu dui vivamus arcu felis bibendum ut tristique et egestas. Eget gravida cum sociis
-						natoque penatibus. Cras fermentum odio eu feugiat pretium nibh. Proin nibh nisl
-						condimentum id venenatis. Porta nibh venenatis cras sed felis eget velit. Id diam vel
-						quam elementum pulvinar etiam non.
-					</p>
-					<p>
-						Ultrices tincidunt arcu non sodales neque sodales ut. Sed enim ut sem viverra aliquet
-						eget sit amet. Lacus luctus accumsan tortor posuere ac ut consequat semper viverra.
-						Viverra accumsan in nisl nisi scelerisque eu ultrices. In massa tempor nec feugiat nisl
-						pretium fusce.
-					</p>
-				</div>
-			</section>
-			<section>
-				<h2 class="section-title">Education</h2>
-				<div class="content">
-					<p>Corporis voluptates tenetur laudantium.</p>
-				</div>
-			</section>
-			<section>
-				<h2 class="section-title">Skills</h2>
-				<div class="content">
-					<p>officia unde omnis</p>
-				</div>
-			</section>
-		</main>
+      <section>
+        <h2 class="section-title">Parcours</h2>
+        <div class="content">
+          <p>
+            Je suis diplômé en ingénierie numérique et management de projet,
+            avec un titre RNCP niveau 7 en chef de projet système d’information.
+            Mon parcours m’a permis de développer des compétences solides en
+            développement web, gestion de projets, et méthodologies agiles.
+          </p>
+          <p>
+            J’ai eu l’opportunité de travailler sur des projets variés, allant
+            de la création d’applications web internes pour optimiser les
+            processus d’entreprise à des plateformes externes facilitant l’accès
+            à des services numériques. Ces expériences m’ont permis de maîtriser
+            des technologies comme <a href="https://reactjs.org/">ReactJS</a>,
+            <a href="https://nodejs.org/">NodeJS</a>, et VueJS.
+          </p>
+          <p>
+            Au-delà de mes compétences techniques, je suis passionné par la
+            résolution de problèmes et l’optimisation des flux de travail grâce
+            à des solutions numériques innovantes. Mon sens de l’organisation,
+            combiné à ma capacité d’adaptation, me permet de contribuer
+            efficacement à des équipes dynamiques et orientées résultats.
+          </p>
+        </div>
+      </section>
+      <section>
+        <h2 class="section-title">Éducation</h2>
+        <div class="content">
+          <p>
+            J'ai obtenu un titre RNCP niveau 7 en <strong
+              >Chef de projet système d’information</strong
+            > à l’Institut G4, avec une spécialisation en <strong
+              >Numérique et Management de projet</strong
+            >. Cette formation m’a permis de développer des compétences
+            approfondies en gestion de projets informatiques et en développement
+            de solutions logicielles.
+          </p>
+        </div>
+      </section>
 
-		<ContactCTA />
-	</div>
+      <section>
+        <h2 class="section-title">Compétences Informatiques</h2>
+        <div class="content">
+          <div class="skills-icons">
+            <span style="color: #61DAFB;">
+              <Icon icon="code" size="2rem" /> ReactJS
+            </span>
+            <span style="color: #339933;">
+              <Icon icon="code" size="2rem" /> NodeJS
+            </span>
+            <span style="color: #42B883;">
+              <Icon icon="code" size="2rem" /> VueJS
+            </span>
+            <span style="color: #fffafa;">
+              <Icon icon="code" size="2rem" /> Symfony
+            </span>
+            <span style="color: #336791;">
+              <Icon icon="code" size="2rem" /> PostgreSQL
+            </span>
+            <span style="color: #00758F;">
+              <Icon icon="code" size="2rem" /> MySQL
+            </span>
+            <span style="color: #777BB4;">
+              <Icon icon="code" size="2rem" /> PHP
+            </span>
+            <span style="color: #E535AB;">
+              <Icon icon="code" size="2rem" /> GraphQL
+            </span>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2 class="section-title">Compétences en Gestion</h2>
+        <div class="content">
+          <ul class="management-skills">
+            <li>
+              <Icon icon="list" size="1.5rem" /> Planification de projets
+            </li>
+            <li>
+              <Icon icon="list" size="1.5rem" /> Gestion des risques
+            </li>
+            <li>
+              <Icon icon="list" size="1.5rem" /> Suivi des budgets et des délais
+            </li>
+            <li>
+              <Icon icon="list" size="1.5rem" /> Coordination inter-équipes
+            </li>
+            <li>
+              <Icon icon="list" size="1.5rem" /> Méthodologies agiles (Scrum, Kanban)
+            </li>
+            <li>
+              <Icon icon="list" size="1.5rem" /> Amélioration continue
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <ContactCTA />
+  </div>
 </BaseLayout>
 
 <style>
-	.about {
-		display: flex;
-		flex-direction: column;
-		gap: 3.5rem;
-	}
+  .about {
+    display: flex;
+    flex-direction: column;
+    gap: 3.5rem;
+  }
 
-	img {
-		margin-top: 1.5rem;
-		border-radius: 1.5rem;
-		box-shadow: var(--shadow-md);
-	}
+  img {
+    margin-top: 1.5rem;
+    border-radius: 1.5rem;
+    box-shadow: var(--shadow-md);
+  }
 
-	section {
-		display: flex;
-		flex-direction: column;
-		gap: 0.5rem;
-		color: var(--gray-200);
-	}
+  section {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    color: var(--gray-200);
+  }
 
-	.section-title {
-		grid-column-start: 1;
-		font-size: var(--text-xl);
-		color: var(--gray-0);
-	}
+  .section-title {
+    grid-column-start: 1;
+    font-size: var(--text-xl);
+    color: var(--gray-0);
+  }
 
-	.content {
-		grid-column: 2 / 4;
-	}
+  .content {
+    grid-column: 2 / 4;
+  }
 
-	.content :global(a) {
-		text-decoration: 1px solid underline transparent;
-		text-underline-offset: 0.25em;
-		transition: text-decoration-color var(--theme-transition);
-	}
+  .content :global(a) {
+    text-decoration: 1px solid underline transparent;
+    text-underline-offset: 0.25em;
+    transition: text-decoration-color var(--theme-transition);
+  }
 
-	.content :global(a:hover),
-	.content :global(a:focus) {
-		text-decoration-color: currentColor;
-	}
+  .content :global(a:hover),
+  .content :global(a:focus) {
+    text-decoration-color: currentColor;
+  }
 
-	@media (min-width: 50em) {
-		.about {
-			display: grid;
-			grid-template-columns: 1fr 60% 1fr;
-		}
+  @media (min-width: 50em) {
+    .about {
+      display: grid;
+      grid-template-columns: 1fr 60% 1fr;
+    }
 
-		.about > :global(:first-child) {
-			grid-column-start: 2;
-		}
+    .about > :global(:first-child) {
+      grid-column-start: 2;
+    }
 
-		section {
-			display: contents;
-			font-size: var(--text-lg);
-		}
-	}
+    section {
+      display: contents;
+      font-size: var(--text-lg);
+    }
+  }
 </style>
