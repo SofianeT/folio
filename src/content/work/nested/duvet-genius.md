@@ -1,7 +1,7 @@
 ---
 title: Système de planification pour services municipaux
 publishDate: 2022-07-01 00:00:00
-img: /assets/stock-2.jpg
+img: /assets/stock-2.png
 img_alt: Planning numérique pour les services municipaux
 description: |
   Conception d'une application web pour gérer les plannings et interventions multi-services de la Métropole Aix-Marseille.

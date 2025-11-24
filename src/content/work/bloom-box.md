@@ -1,10 +1,10 @@
 ---
 title: Plateforme d’achat de timbres électroniques
 publishDate: 2021-09-01 00:00:00
-img: /assets/stock-3.jpg
+img: /assets/stock-3.png
 img_alt: Interface web pour l'achat de timbres électroniques
 description: |
-  Développement d'une plateforme numérique pour faciliter l'achat et l'utilisation de timbres électroniques pour les démarches administratives au Bénin.
+  Conception et développement d’une plateforme numérique destinée à dématérialiser l’achat et l’utilisation de timbres électroniques pour les démarches administratives au Bénin.
 tags:
   - VueJS
   - NodeJS
@@ -13,21 +13,24 @@ tags:
 
 ## Contexte du Projet
 
-> "Simplifier les démarches administratives grâce à la technologie."
+> "Simplifier les démarches administratives grâce à une solution numérique accessible et sécurisée."
 
-Chez **Globaloptim**, l'objectif était de concevoir une plateforme intuitive permettant aux citoyens du Bénin d'acheter et d'utiliser des timbres électroniques pour les passeports et cartes d’identité.
+Au sein de **Globaloptim**, la mission consistait à créer une plateforme intuitive permettant aux citoyens béninois d’acquérir des timbres électroniques pour diverses démarches administratives, notamment les passeports et les cartes d’identité. Le projet visait à moderniser les processus, réduire la dépendance au papier et fluidifier l’expérience utilisateur.
 
 ### Développement et Technologies
 
-- **Frontend** : VueJS pour une interface utilisateur claire et conviviale.
-- **Backend** : NodeJS pour garantir la stabilité et la rapidité du système.
+- **Frontend** : Développé en VueJS, garantissant une interface ergonomique, rapide et adaptée à tous les profils d’utilisateurs.
+- **Backend** : Conçu avec NodeJS pour assurer une performance optimale, une gestion robuste des flux et une haute disponibilité.
+- **Intégration sécurisée** : Mise en place de mécanismes de contrôle et de validation pour garantir la conformité des transactions.
 
 ### Résultats
 
-- Adoption rapide de la plateforme par les utilisateurs.
-- Réduction des délais pour les démarches administratives.
+- Forte adoption dès le lancement par les citoyens et les administrations.
+- Accélération significative des démarches grâce à la réduction des files d’attente et des traitements manuels.
+- Amélioration globale de la transparence et de la traçabilité des opérations administratives.
 
-#### Méthodologies Utilisées
+### Méthodologies Utilisées
 
-- **Prototypage rapide** pour valider les fonctionnalités clés.
-- Collaboration avec les administrations locales pour une adaptation parfaite.
+- **Prototypage rapide** pour tester et valider les parcours utilisateurs en amont.
+- **Co-construction avec les acteurs institutionnels** afin d’aligner la plateforme sur les exigences légales et opérationnelles.
+- Approche orientée **UX** pour maximiser l’efficacité et la simplicité d’utilisation.
