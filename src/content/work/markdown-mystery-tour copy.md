@@ -1,10 +1,10 @@
 ---
 title: Mgmt_Client
 publishDate: 2022-11-10 00:00:00
-img: /assets/stock-2.jpg
+img: /assets/mgmtclient.png
 img_alt: Capture d'écran de l'interface utilisateur de Mgmt_Client
 description: |
-  Frontend de l'application de gestion développée en React.js avec GraphQL.
+  Frontend d'une application de gestion professionnelle, développé en React.js avec GraphQL.
 tags:
   - React.js
   - GraphQL
@@ -13,22 +13,21 @@ tags:
 
 ## Présentation du projet
 
-> "Une interface utilisateur intuitive est la clé d'une gestion efficace."
-
-Mgmt_Client est le frontend d'une application de gestion conçue pour optimiser les processus internes des entreprises. Développée en React.js et utilisant GraphQL pour les requêtes de données, l'application offre une interface utilisateur réactive et conviviale.
+Mgmt_Client est le frontend d'une application de gestion destinée à simplifier les processus internes des entreprises. L'application offre une interface réactive et intuitive, permettant aux utilisateurs de suivre les informations clés et d'effectuer leurs tâches quotidiennes efficacement.
 
 ### Fonctionnalités principales
 
-- **Tableau de bord interactif** : Vue d'ensemble des principales métriques de gestion.
-- **Gestion des utilisateurs** : Ajout, modification et suppression des profils utilisateurs.
-- **Intégration avec le backend** : Communication fluide avec le serveur via GraphQL.
+- **Tableau de bord interactif** : Suivi clair des métriques principales.
+- **Gestion des utilisateurs** : Création, modification et suppression des profils.
+- **Connexion au backend** : Requêtes et mises à jour des données en temps réel via GraphQL.
 
 ### Technologies utilisées
 
-- **React.js** : Pour la construction de l'interface utilisateur.
-- **GraphQL** : Pour les requêtes et mutations de données.
-- **Apollo Client** : Gestion des requêtes GraphQL côté client.
+- **React.js** : Développement de l'interface utilisateur.
+- **GraphQL & Apollo Client** : Requêtes et gestion des données côté client.
 
-### Impact
+### Résultats et impact
 
-L'application a permis une amélioration significative de l'efficacité opérationnelle, réduisant le temps consacré aux tâches administratives et améliorant la satisfaction des utilisateurs finaux.
+- Réduction du temps consacré aux tâches administratives.
+- Amélioration de la satisfaction des utilisateurs grâce à une interface simple et réactive.
+- Optimisation des échanges de données entre le frontend et le backend.

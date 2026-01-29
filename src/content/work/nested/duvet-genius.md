@@ -4,30 +4,35 @@ publishDate: 2022-07-01 00:00:00
 img: /assets/stock-2.png
 img_alt: Planning numérique pour les services municipaux
 description: |
-  Conception d'une application web pour gérer les plannings et interventions multi-services de la Métropole Aix-Marseille.
+  Application web de planification et de coordination des interventions multi-services pour la Métropole Aix-Marseille.
 tags:
   - AngularJS
   - NodeJS
-  - Gestion de Projet
+  - Gestion de projet
 ---
 
-## Contexte du Projet
+## Présentation du projet
 
-> "Planifier efficacement pour des services municipaux plus réactifs."
+Ce projet, réalisé pour la **Métropole Aix-Marseille**, consistait à concevoir une application web centralisée permettant de planifier et coordonner les interventions de plusieurs services municipaux. L’objectif était de limiter les conflits de planning, d’améliorer la visibilité des interventions et d’augmenter l’efficacité opérationnelle.
 
-Pour la Métropole Aix-Marseille, le projet consistait à créer une solution centralisée permettant de planifier et coordonner les interventions de plusieurs services municipaux, réduisant ainsi les conflits de planning et les inefficacités.
+### Fonctionnalités principales
 
-### Développement et Technologies
+- **Planification centralisée** : Visualisation et gestion des plannings multi-services.
+- **Coordination des interventions** : Réduction des conflits et meilleure allocation des ressources.
+- **Suivi opérationnel** : Accès rapide aux informations pour les équipes de gestion.
 
-- **Frontend** : AngularJS pour des interfaces modulaires et dynamiques.
-- **Backend** : NodeJS pour une gestion rapide et fiable des données.
+### Technologies utilisées
 
-### Résultats
+- **AngularJS** : Développement d’interfaces dynamiques et modulaires.
+- **NodeJS** : Backend assurant la gestion et la fiabilité des données.
 
-- Réduction des conflits de planning entre services.
-- Augmentation de la réactivité des équipes sur le terrain.
+### Résultats et impact
 
-#### Méthodologies Utilisées
+- Réduction significative des conflits de planning entre services.
+- Amélioration de la réactivité et de la coordination des équipes terrain.
+- Meilleure visibilité des interventions pour les gestionnaires.
 
-- **Suivi Agile** avec Trello et Confluence.
-- **Formation des utilisateurs** : Sessions de prise en main avec les gestionnaires.
+### Méthodologies et pratiques
+
+- Suivi **Agile** avec Trello et Confluence.
+- Accompagnement et formation des utilisateurs lors de la mise en production.

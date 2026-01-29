@@ -2,8 +2,6 @@
 import { getCollection } from "astro:content";
 
 import BaseLayout from "../layouts/BaseLayout.astro";
-
-import ContactCTA from "../components/ContactCTA.astro";
 import PortfolioPreview from "../components/PortfolioPreview.astro";
 import Hero from "../components/Hero.astro";
 import Grid from "../components/Grid.astro";
@@ -14,14 +12,14 @@ const projects = (await getCollection("work")).sort(
 ---
 
 <BaseLayout
-  title="My Work | Sofiane Tigrine"
-  description="Tous mes projets récents sont disponibles ici. Découvrez mes compétences en développement web et mes expériences passées."
+  title="Projets | Sofiane Tigrine – Développeur Full Stack"
+  description="Sélection de projets professionnels en développement web et logiciel : applications métiers, plateformes institutionnelles et projets full stack."
 >
   <div class="stack gap-20">
     <main class="wrapper stack gap-8">
       <Hero
-        title="Mes Projets"
-        tagline="Découvrez mes projets récents ci-dessous pour avoir un aperçu de mon expérience passée."
+        title="Projets réalisés"
+        tagline="Applications web et logicielles développées dans des contextes professionnels et institutionnels."
         align="start"
       />
 
@@ -35,6 +33,21 @@ const projects = (await getCollection("work")).sort(
         }
       </Grid>
     </main>
-    <ContactCTA />
+
+    <section class="wrapper stack gap-4">
+      <h2>Échanger sur votre projet</h2>
+      <p>
+        Vous avez un besoin technique ou une opportunité à discuter ? Planifions
+        un échange.
+      </p>
+      <a
+        href="https://calendly.com/ton-lien"
+        target="_blank"
+        rel="noopener"
+        class="btn primary"
+      >
+        Prendre rendez-vous
+      </a>
+    </section>
   </div>
 </BaseLayout>
