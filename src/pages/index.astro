@@ -17,14 +17,17 @@ const projects = (await getCollection("work"))
   title="Sofiane Tigrine – Développeur full stack"
   description="Développeur full stack spécialisé en React, Node.js et applications web métier. Projets professionnels et institutionnels."
 >
-  <div class="stack gap-20 lg:gap-48">
-    <div class="wrapper stack gap-8 lg:gap-20">
-      <header class="hero">
-        <Hero
-          title="Développeur full stack"
-          tagline="Je conçois et développe des applications web performantes, maintenables et adaptées aux besoins métier."
-          align="start"
-        />
+  <div class="page stack gap-20 lg:gap-48">
+    <!-- HERO -->
+    <section class="wrapper">
+      <header class="hero hero-home">
+        <div class="hero-content">
+          <Hero
+            title="Développeur full stack"
+            tagline="Je conçois et développe des applications web performantes, maintenables et adaptées aux besoins métier."
+            align="start"
+          />
+        </div>
 
         <img
           alt="Portrait de Sofiane Tigrine"
@@ -35,9 +38,10 @@ const projects = (await getCollection("work"))
       </header>
 
       <Skills />
-    </div>
+    </section>
 
-    <main class="wrapper stack gap-20 lg:gap-48">
+    <!-- PROJETS -->
+    <main class="wrapper">
       <section class="section with-background with-cta">
         <header class="section-header stack gap-2 lg:gap-4">
           <h3>Projets sélectionnés</h3>
@@ -68,20 +72,139 @@ const projects = (await getCollection("work"))
       </section>
     </main>
 
-    <section class="wrapper stack gap-4">
-      <h2>Échanger sur votre projet</h2>
-      <p>
-        Besoin d’un développeur pour renforcer une équipe ou concevoir une
-        application web ? Planifions un échange.
-      </p>
-      <a
-        href="https://calendly.com/ton-lien"
-        target="_blank"
-        rel="noopener"
-        class="btn primary"
-      >
-        Prendre rendez-vous
-      </a>
+    <!-- CTA FINAL -->
+    <section class="cta-final">
+      <div class="cta-final-content stack gap-4">
+        <h2>Échanger sur votre projet</h2>
+        <p>
+          Besoin d’un développeur pour renforcer une équipe ou concevoir une
+          application web ? Planifions un échange.
+        </p>
+        <a
+          href="https://calendly.com/ton-lien"
+          target="_blank"
+          rel="noopener"
+          class="btn primary"
+        >
+          Prendre rendez-vous
+        </a>
+      </div>
     </section>
   </div>
 </BaseLayout>
+
+<style>
+  /* =========================
+     STRUCTURE GLOBALE
+  ========================= */
+
+  .page {
+    width: 100%;
+  }
+
+  /* =========================
+     HERO
+  ========================= */
+
+  .hero-home {
+    display: grid;
+    gap: 3rem;
+    align-items: center;
+  }
+
+  .hero-content {
+    max-width: 55ch;
+  }
+
+  .hero-home img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 3rem;
+    box-shadow: var(--shadow-md);
+  }
+
+  @media (min-width: 50em) {
+    .hero-home {
+      grid-template-columns: 6fr 4fr;
+    }
+  }
+
+  /* =========================
+     SECTION PROJETS
+  ========================= */
+
+  .section {
+    display: grid;
+    gap: 2.5rem;
+    max-width: 1200px;
+    margin-inline: auto;
+  }
+
+  .section-header {
+    max-width: 50ch;
+    text-align: center;
+    margin-inline: auto;
+    color: var(--gray-300);
+  }
+
+  .section-header h3 {
+    font-size: var(--text-2xl);
+  }
+
+  .gallery {
+    width: 100%;
+  }
+
+  .cta {
+    margin-top: 2rem;
+    text-align: center;
+  }
+
+  @media (min-width: 50em) {
+    .section {
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-areas:
+        "header header header header"
+        "gallery gallery gallery gallery";
+      gap: 5rem;
+    }
+
+    .section.with-cta {
+      grid-template-areas:
+        "header header header cta"
+        "gallery gallery gallery gallery";
+    }
+
+    .section-header {
+      grid-area: header;
+      text-align: left;
+      margin-inline: 0;
+    }
+
+    .gallery {
+      grid-area: gallery;
+    }
+
+    .cta {
+      grid-area: cta;
+      text-align: right;
+      align-self: end;
+    }
+  }
+
+  /* =========================
+     CTA FINAL
+  ========================= */
+
+  .cta-final {
+    padding: 4rem 1rem;
+  }
+
+  .cta-final-content {
+    max-width: 48ch;
+    margin-inline: auto;
+    text-align: center;
+  }
+</style>
