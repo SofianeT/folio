@@ -15,19 +15,17 @@ const projects = (await getCollection("work"))
 
 <BaseLayout
   title="Sofiane Tigrine – Développeur full stack"
-  description="Développeur full stack spécialisé en React, Node.js et applications web métier. Projets professionnels et institutionnels."
+  description="Développeur full stack spécialisé en React, Node.js et applications web métier."
 >
-  <div class="page stack gap-20 lg:gap-48">
+  <div class="stack gap-24 lg:gap-48">
     <!-- HERO -->
-    <section class="wrapper">
-      <header class="hero hero-home">
-        <div class="hero-content">
-          <Hero
-            title="Développeur full stack"
-            tagline="Je conçois et développe des applications web performantes, maintenables et adaptées aux besoins métier."
-            align="start"
-          />
-        </div>
+    <div class="wrapper stack gap-12 lg:gap-20">
+      <header class="hero">
+        <Hero
+          title="Développeur full stack"
+          tagline="Je conçois et développe des applications web performantes, maintenables et orientées métier."
+          align="start"
+        />
 
         <img
           alt="Portrait de Sofiane Tigrine"
@@ -38,173 +36,161 @@ const projects = (await getCollection("work"))
       </header>
 
       <Skills />
-    </section>
+    </div>
 
     <!-- PROJETS -->
     <main class="wrapper">
-      <section class="section with-background with-cta">
-        <header class="section-header stack gap-2 lg:gap-4">
-          <h3>Projets sélectionnés</h3>
-          <p>
-            Applications web et logicielles développées dans des contextes
-            professionnels et institutionnels.
-          </p>
+      <section class="projects-section">
+        <header class="projects-header">
+          <div>
+            <h3>Projets sélectionnés</h3>
+            <p>
+              Applications web et logicielles développées dans des contextes
+              professionnels et institutionnels.
+            </p>
+          </div>
+
+          <a href="/work/" class="btn ghost">
+            Voir tous les projets
+            <Icon icon="arrow-right" size="1.1em" />
+          </a>
         </header>
 
-        <div class="gallery">
-          <Grid variant="offset">
-            {
-              projects.map((project) => (
-                <li>
-                  <PortfolioPreview project={project} />
-                </li>
-              ))
-            }
-          </Grid>
-        </div>
-
-        <div class="cta">
-          <a href="/work/" class="btn secondary">
-            Voir tous les projets
-            <Icon icon="arrow-right" size="1.2em" />
-          </a>
-        </div>
+        <Grid variant="offset">
+          {
+            projects.map((project) => (
+              <li>
+                <PortfolioPreview project={project} />
+              </li>
+            ))
+          }
+        </Grid>
       </section>
     </main>
 
     <!-- CTA FINAL -->
     <section class="cta-final">
-      <div class="cta-final-content stack gap-4">
-        <h2>Échanger sur votre projet</h2>
-        <p>
-          Besoin d’un développeur pour renforcer une équipe ou concevoir une
-          application web ? Planifions un échange.
-        </p>
-        <a
-          href="https://calendly.com/ton-lien"
-          target="_blank"
-          rel="noopener"
-          class="btn primary"
-        >
-          Prendre rendez-vous
-        </a>
-      </div>
+      <h2>Échanger sur votre projet</h2>
+      <p>
+        Besoin d’un développeur pour renforcer une équipe ou concevoir une
+        application web ? Planifions un échange.
+      </p>
+
+      <a
+        href="https://calendly.com/sofiane-tigrine15/30min"
+        target="_blank"
+        rel="noopener"
+        class="btn primary large"
+      >
+        Prendre rendez-vous
+      </a>
     </section>
   </div>
 </BaseLayout>
 
 <style>
-  /* =========================
-     STRUCTURE GLOBALE
-  ========================= */
+  /* ================= HERO ================= */
 
-  .page {
-    width: 100%;
-  }
-
-  /* =========================
-     HERO
-  ========================= */
-
-  .hero-home {
+  .hero {
     display: grid;
     gap: 3rem;
-    align-items: center;
-  }
-
-  .hero-content {
-    max-width: 55ch;
-  }
-
-  .hero-home img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    object-position: top;
-    border-radius: 3rem;
-    box-shadow: var(--shadow-md);
   }
 
   @media (min-width: 50em) {
-    .hero-home {
+    .hero {
       grid-template-columns: 6fr 4fr;
+      align-items: center;
     }
   }
 
-  /* =========================
-     SECTION PROJETS
-  ========================= */
-
-  .section {
-    display: grid;
-    gap: 2.5rem;
-    max-width: 1200px;
-    margin-inline: auto;
+  .hero img {
+    border-radius: 3rem;
+    object-fit: cover;
+    box-shadow: var(--shadow-lg);
   }
 
-  .section-header {
+  /* ================= PROJETS ================= */
+
+  .projects-section {
+    display: grid;
+    gap: 4rem;
+  }
+
+  .projects-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 2rem;
+  }
+
+  .projects-header h3 {
+    font-size: var(--text-3xl);
+  }
+
+  .projects-header p {
     max-width: 50ch;
+    color: var(--gray-300);
+    margin-top: 0.5rem;
+  }
+
+  /* ================= CTA FINAL ================= */
+
+  .cta-final {
     text-align: center;
-    margin-inline: auto;
+    padding: 6rem 1rem;
+    background: radial-gradient(
+      600px at 50% 100%,
+      rgba(124, 58, 237, 0.15),
+      transparent 70%
+    );
+  }
+
+  .cta-final h2 {
+    font-size: clamp(2rem, 4vw, 3rem);
+  }
+
+  .cta-final p {
+    max-width: 55ch;
+    margin: 1.5rem auto 3rem;
     color: var(--gray-300);
   }
 
-  .section-header h3 {
-    font-size: var(--text-2xl);
+  /* ================= BOUTONS ================= */
+
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
+    padding: 0.9rem 1.4rem;
+    border-radius: 999px;
+    font-weight: 500;
+    transition: all 0.25s ease;
   }
 
-  .gallery {
-    width: 100%;
+  .btn.primary {
+    background: linear-gradient(135deg, #7c3aed, #a855f7);
+    color: white;
+    box-shadow: 0 10px 30px rgba(124, 58, 237, 0.35);
   }
 
-  .cta {
-    margin-top: 2rem;
-    text-align: center;
+  .btn.primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 15px 40px rgba(124, 58, 237, 0.45);
   }
 
-  @media (min-width: 50em) {
-    .section {
-      grid-template-columns: repeat(4, 1fr);
-      grid-template-areas:
-        "header header header header"
-        "gallery gallery gallery gallery";
-      gap: 5rem;
-    }
-
-    .section.with-cta {
-      grid-template-areas:
-        "header header header cta"
-        "gallery gallery gallery gallery";
-    }
-
-    .section-header {
-      grid-area: header;
-      text-align: left;
-      margin-inline: 0;
-    }
-
-    .gallery {
-      grid-area: gallery;
-    }
-
-    .cta {
-      grid-area: cta;
-      text-align: right;
-      align-self: end;
-    }
+  .btn.large {
+    font-size: 1.05rem;
+    padding: 1.1rem 1.8rem;
   }
 
-  /* =========================
-     CTA FINAL
-  ========================= */
-
-  .cta-final {
-    padding: 4rem 1rem;
+  .btn.ghost {
+    color: var(--accent);
+    border: 1px solid var(--gray-700);
+    background: rgba(15, 120, 201, 0.953);
   }
 
-  .cta-final-content {
-    max-width: 48ch;
-    margin-inline: auto;
-    text-align: center;
+  .btn.ghost:hover {
+    background: rgba(124, 58, 237, 0.1);
+    border-color: var(--accent);
   }
 </style>

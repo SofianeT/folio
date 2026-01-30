@@ -15,8 +15,9 @@ const projects = (await getCollection("work")).sort(
   title="Projets | Sofiane Tigrine – Développeur Full Stack"
   description="Sélection de projets professionnels en développement web et logiciel : applications métiers, plateformes institutionnelles et projets full stack."
 >
-  <div class="stack gap-20">
-    <main class="wrapper stack gap-8">
+  <div class="page stack gap-20">
+    <!-- ================= PROJETS ================= -->
+    <main class="wrapper stack gap-10">
       <Hero
         title="Projets réalisés"
         tagline="Applications web et logicielles développées dans des contextes professionnels et institutionnels."
@@ -34,20 +35,113 @@ const projects = (await getCollection("work")).sort(
       </Grid>
     </main>
 
-    <section class="wrapper stack gap-4">
+    <!-- ================= CTA ================= -->
+    <section class="cta-section">
       <h2>Échanger sur votre projet</h2>
       <p>
         Vous avez un besoin technique ou une opportunité à discuter ? Planifions
         un échange.
       </p>
+
       <a
-        href="https://calendly.com/ton-lien"
+        href="https://calendly.com/sofiane-tigrine15/30min"
         target="_blank"
         rel="noopener"
-        class="btn primary"
+        class="btn btn-primary"
       >
         Prendre rendez-vous
       </a>
     </section>
   </div>
 </BaseLayout>
+
+<style>
+  /* ======================================================
+   STRUCTURE
+====================================================== */
+
+  .page {
+    display: flex;
+    flex-direction: column;
+    gap: 6rem;
+  }
+
+  /* ======================================================
+   CTA SECTION
+====================================================== */
+
+  .cta-section {
+    text-align: center;
+    max-width: 42rem;
+    margin-inline: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .cta-section h2 {
+    font-size: var(--text-2xl);
+    color: var(--gray-0);
+  }
+
+  .cta-section p {
+    color: var(--gray-300);
+    line-height: 1.6;
+  }
+
+  /* ======================================================
+   BOUTONS — STYLE GLOBAL HOMOGÈNE
+====================================================== */
+
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+
+    font-weight: 500;
+    text-decoration: none;
+    border-radius: 999px;
+
+    padding: 0.85rem 1.6rem;
+    width: fit-content;
+    margin-inline: auto;
+
+    transition:
+      transform 0.2s ease,
+      box-shadow 0.2s ease,
+      background-color 0.2s ease;
+
+    outline: none;
+    box-shadow: none;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  /* Bouton principal */
+  .btn-primary {
+    background: linear-gradient(135deg, #7c3aed, #a855f7);
+    color: white;
+    box-shadow: 0 10px 30px rgba(124, 58, 237, 0.35);
+  }
+
+  /* Hover */
+  .btn-primary:hover {
+    transform: translateY(-1px);
+    box-shadow: var(--shadow-md);
+  }
+
+  /* Focus clavier (accessibilité propre) */
+  .btn:focus-visible {
+    box-shadow: 0 0 0 3px rgba(168, 85, 247, 0.35);
+  }
+
+  /* ======================================================
+   RESPONSIVE
+====================================================== */
+
+  @media (min-width: 50em) {
+    .cta-section {
+      gap: 1.25rem;
+    }
+  }
+</style>
